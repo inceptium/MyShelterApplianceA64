@@ -1,0 +1,12 @@
+# Contents of /etc/systemd/system/myservice.service
+[Unit]
+Description=MyShelter
+After=network.target
+
+[Service]
+Type=simple
+#Restart=always
+ExecStart=/root/MyShelterAppliance/./start_myshelter_service.sh
+
+[Install]
+WantedBy=multi-user.target

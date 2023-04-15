@@ -1,0 +1,12 @@
+# Contents of /etc/systemd/system/myservice.service
+[Unit]
+Description=Inceptium Discovery
+After=network.target
+
+[Service]
+Type=simple
+#Restart=always
+ExecStart=/root/MyShelterAppliance/./start_discovery.sh
+
+[Install]
+WantedBy=multi-user.target
