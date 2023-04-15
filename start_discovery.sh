@@ -1,6 +1,6 @@
 #!/bin/bash
 LOGFILE=/tmp/ramdisk/myshelter_discover.log
-cd /root/MyShelterAppliance/InceptiumDiscovery/
+cd /root/MyShelterApplianceA64/InceptiumDiscovery/
 INCEPTIUM_ACTIVE=1
 #LOGFILE=/root/BaseDati/myshelter_discover.log
 SERIALNO=$(cat "/root/BaseDati/etc/serial.no") 
