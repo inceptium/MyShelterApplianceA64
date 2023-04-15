@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<letocrono_status>
+<elemento id="412" type="7" status="1" currentvalue="0" title="Senza Nome" label_value="mV" id_group="84" des_group="Gruppo Progetto" />
+<elemento id="377" type="2" status="0" currentvalue="0" title="Pippo Schedula è" label_value="" id_group="85" des_group="Gruppo Utente" />
+<elemento id="416" type="6" status="0" currentvalue="0" title="Ultimo Timer'" label_value="mV" id_group="85" des_group="Gruppo Utente" />
+<elemento id="417" type="7" status="0" currentvalue="100" title="analogico 2  pippo" label_value="%" id_group="85" des_group="Gruppo Utente" />
+<elemento id="428" type="5" status="0" currentvalue="0" title="Unaltro è andato via" label_value="mV" id_group="85" des_group="Gruppo Utente" />
+<elemento id="429" type="7" status="0" currentvalue="0" title="Senza è Nome" label_value="mV" id_group="85" des_group="Gruppo Utente" />
+<elemento id="430" type="5" status="0" currentvalue="0" title="Senza Nome è" label_value="mV" id_group="85" des_group="Gruppo Utente" />
+<elemento id="406" type="3" status="0" currentvalue="0" title="Interr 1" label_value="mV" id_group="90" des_group="Barche" />
+<elemento id="407" type="3" status="0" currentvalue="0" title="Interruttore 2" label_value="mV" id_group="90" des_group="Barche" />
+<elemento id="408" type="3" status="0" currentvalue="0" title="Interr 3" label_value="mV" id_group="90" des_group="Barche" />
+<elemento id="409" type="6" status="0" currentvalue="0" title="Interr 4" label_value="mV" id_group="90" des_group="Barche" />
+<elemento id="414" type="3" status="0" currentvalue="0" title="pippo" label_value="mV" id_group="90" des_group="Barche" />
+<elemento id="415" type="3" status="0" currentvalue="0" title="Senza Nome" label_value="mV" id_group="90" des_group="Barche" />
+</letocrono_status>

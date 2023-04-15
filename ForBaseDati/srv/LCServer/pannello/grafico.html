@@ -1,0 +1,95 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=no" />
+        <meta charset="utf-8">
+        <link href="css/personal.css" rel="stylesheet" type="text/css"/>
+        <link  id="temaColore" href="css/nero.css" rel="stylesheet" type="text/css"/>
+        <link href="css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+        <script src="jquery/jquery-1.7.1.min.js"></script>
+        <script src="jquery/jquery-ui.min.js"></script>
+        <script src="jquery/hammer.js" type="text/javascript"></script>
+        <script src="jquery/jquery.specialevent.hammer.js" type="text/javascript"></script>
+        <script src="jquery/jquery.md5.js"></script>
+        <script src="jquery/jquery.flot.min.js"></script>
+        <script src="jquery/jquery.flot.navigate.min.js"></script>
+        <script src="oggetti/elemento.min.js"></script>
+        <script src="oggetti/attendi.min.js"></script>
+        <script src="oggetti/firma.min.js"></script>
+        <script src="oggetti/password.min.js"></script>
+        <script src="oggetti/grafico.js"></script>
+        <script src="oggetti/finestra.min.js" type="text/javascript"></script>
+        <script src="oggetti/testata.min.js" type="text/javascript"></script>
+        <script src="oggetti/footerImpostazioni.js" type="text/javascript"></script>
+        <script src="oggetti/stile.min.js" type="text/javascript"></script>
+        <script src="oggetti/mainEnergiaProdotta.js" type="text/javascript"></script>
+        <link rel="shortcut icon" href="images/favicon.ico" >
+        <title>LetoCrono</title>
+
+    </head> 
+    <body lang="" style="height: 600px"> 
+        <div id="textaree"></div>
+        <div class="header2" >
+            <canvas id="header" width="263" height="50"></canvas>
+        </div>
+        <div id="inserimentoDati" style="   border: 1px solid white;margin: 10px 10px 25px;padding-bottom: 15px;padding-top: 15px;position: relative;text-align: center;top: 60px;" class="coloreScritte">
+
+            <table style="margin:auto;">
+                <tr>
+                    <td> Nome Elemento<b style='color:red'> *</b></td>
+                    <td>  <input id="nomeElemento" style="position: relative;" value=""/></td>
+                </tr>
+                <tr><td></td><td style="color:red;font-weight: bold">Primo Periodo</td></tr>
+                <tr>
+                    <td> Dal </td>
+                    <td>  <input type="datetime" id="data1" style="position: relative;" value=""/></td>
+                </tr>
+                <tr>
+                    <td> Al</td>
+                    <td>  <input type="datetime" id="data2" style="position: relative;" value=""/></td>
+                </tr>
+                <tr><td></td><td style="color:rgb(10,168,208);font-weight: bold">Secondo Periodo</td></tr>
+                <tr>
+                    <td> Dal </td>
+                    <td>  <input type="datetime" id="data3" style="position: relative;" value=""/></td>
+                </tr>
+                <tr>
+                    <td> Al</td>
+                    <td>  <input type="datetime" id="data4" style="position: relative;" value=""/></td>
+                </tr>
+
+            </table>
+            <div id="messaggi"> </div>
+            <a id="creaGrafico" href="#" class="pulsante grandezzaPulsante" style="width:100px;margin-left:auto;margin-right: auto;margin-top: 10px;padding-top: 7px">Elabora Grafico</a>
+        </div>
+
+        <div style="margin: 10px 10px -10px;padding-top: 15px;position: relative;text-align: center;height:66px;top: 60px;overflow: auto" class="coloreScritte">
+            <canvas  id="grafico" width="250" height="300" style="margin-bottom: 10px;border-color: white;display: none"></canvas> 
+            <div style="height: 34px;overflow: auto;width: 224px;margin:auto;border:1px solid white">
+                <table style="display: inline-block">
+                    <tr><td id="labelUltimoValoreW" ></td><td id="ultimoValoreW"></td><td id="ultimoValoreWData"></td><td id="energiaProdotta"></td></tr>
+                    <tr><td id="labelMediaW"> </td><td id="mediaW"></td><td></td></tr>
+                    <!--tr><td>Max W:</td><td id="maxW">-</td><td id="maxWData"></td></tr>
+                    <tr><td>Min W:</td><td id="minW" >-</td><td id="minWData"></td></tr-->
+                </table> 
+                <!--table style="overflow: auto;text-align: center;margin: auto;border: white;display: inline-block " id="datiInTabella">
+                    <tr style="font-weight: bold"><td>Data</td><td>Ora</td><td>W</td></tr>
+                </table-->
+
+            </div>
+            <div id="pulsantiNavigazione" style="position: absolute;margin: auto;top:52px;left:5px;"><a href="javascript:funzioneVuota()" id="zoomOut"><img src="images/zoomout.png"/></a> <a href="javascript:funzioneVuota()" id="zoomIn"><img src="images/zoomin.png"/></a><a href="javascript:funzioneVuota()" style="padding-left:5px" id="left"><img src="images/left.png"/></a><a href="javascript:funzioneVuota()" style="padding-left:5px" id="right"><img src="images/right.png"/></a></div>
+        </div>
+        <div style="padding: 10px;background: white;width: 85%; height: 265px;position: relative;top:75px;margin:auto;">
+            <div style="width: 100%; height: 100%;" id="placeholder"></div></div>
+        <div class="created2">
+            <p>Developed By <a style="color:rgb(1,159,59)" href="javascript:funzioneVuota()">Unit Software s.r.l</a></p>
+            <p>Copyright <a style="color:rgb(28,117,188)" href="javascript:funzioneVuota()">2013</a></p>
+            <p>Versione 3.2</p>
+        </div>
+        <div class="footer">
+            <canvas id="footer" width="243" height="50"></canvas>
+        </div>
+    </body>
+</html>

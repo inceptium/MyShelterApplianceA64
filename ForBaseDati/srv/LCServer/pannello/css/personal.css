@@ -1,0 +1,270 @@
+body{margin:0px;padding:0px;font-family:Helvetica, Arial, sans-serif;font-size:12px;-webkit-touch-callout: none;-webkit-tap-highlight-color: rgba(0,0,0,0);
+     -webkit-touch-callout: none;
+}
+.header{text-decoration:none;text-align:center;padding-left:0px!important;margin:2px;margin-left: 0px}
+.footer{width:100%;height:50px;position:fixed;bottom:0px;z-index:1;text-align: right;text-align: center}
+.header2{width:100%;height:53px;position:fixed;z-index:15;margin:0px!important;top:0;text-align:center}
+/*link generale*/
+a:link, a:visited{text-decoration:none;font-weight:bold;}
+.titolo{position: relative;
+        color: white;
+        display: block;
+        height: 42px;
+        width: 140px;
+        text-align: center;
+}
+#nomeGruppo{position:relative;top:60px;text-align: center;font-size: 12px;}
+#nomeGruppoV{font-size: 14px}
+#inputText{position: relative;top:-40px;width: 30px;background: white;color:black}
+textarea{
+    top: -103px;
+    width: 121px;
+    height: 85px;
+    position: relative;
+    background: transparent;
+    border: transparent;
+    resize: none;
+    color: white;
+    font-family: arial}
+.x{z-index:10;position:absolute;display:none;top:0px;right:5%;font-size:45px;}
+.chiudiText{display:none;position:fixed;top:91px;left:25%;z-index:31;}
+.contenuto{position:relative;top:43px;text-align:center;margin:0px!important;}
+#temi{position: fixed;bottom:43px;height: 99px;width: 100%;right:0px;display: none;overflow: auto}
+#colori{position: fixed;bottom:43px;height: 99px;width: 100%;right:0px;display: none;overflow: auto}
+.selezioneTemi, .selezioneColori {
+    display: inline;
+    height: 45px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: 8px;
+    text-align: center;
+    top: 7px;
+}
+.selezioneTemi a, .selezioneColori a {
+    color: white;
+    display: inline-block;
+    padding: 2px;
+    width: 62px;
+    margin-bottom: 10px
+}
+.selezioneTemi a:hover, .selezioneColori a:hover {
+    color: lightgray;
+}
+.selezioneTemi li, .selezioneColori li {
+    display: inline;
+}
+.sceltaTema,.sceltaIcone{
+    margin: 10px
+}
+.metro{
+    background-color: red!important;
+    padding: 8px;
+}
+.push{
+    background-color: #00c6ff!important;
+    padding: 8px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #1c75bc!important;
+    background: -moz-radial-gradient(center, ellipse cover, #1c75bc 0%, #3982ba 41%, #60abf8 97%, #7abcff 100%)!important;
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#1c75bc), color-stop(41%,#3982ba), color-stop(97%,#60abf8), color-stop(100%,#7abcff))!important;
+    background: -webkit-radial-gradient(center, ellipse cover, #1c75bc 0%,#3982ba 41%,#60abf8 97%,#7abcff 100%)!important;
+    background: -o-radial-gradient(center, ellipse cover, #1c75bc 0%,#3982ba 41%,#60abf8 97%,#7abcff 100%)!important;
+    background: -ms-radial-gradient(center, ellipse cover, #1c75bc 0%,#3982ba 41%,#60abf8 97%,#7abcff 100%)!important;
+    background: radial-gradient(ellipse at center, #1c75bc 0%,#3982ba 41%,#60abf8 97%,#7abcff 100%)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c75bc', endColorstr='#7abcff',GradientType=1 )!important;
+}
+.creative{
+    background-color: white!important;
+    padding: 8px;
+    color: black!important;
+    border: 1px solid black;
+}
+.semplice
+{
+    border: 1px solid white;
+    padding: 8px;
+    background: black!important;
+}
+.tecno
+{
+    text-shadow: 0 0 0.2em rgb(54, 255, 0), 0 0 0.2em rgb(54, 255, 1);
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(54, 255, 0, 1);
+    box-shadow: 0px 0px 7px 1px rgba(54, 255, 0, 1);
+}
+.temaTR{
+    color:white;
+    font-family: arial;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    display: inline;
+    height: 20px
+}
+.temaTR2{
+    color:white;
+    font-family: arial;
+    display: inline-block;
+    height: 50px;
+    padding-top: 6px;
+}
+.pulsante
+{
+    display: inline-block;
+    height: auto;
+    padding:8px;
+    font-size:12px;
+    font-weight: bold;
+    color: white;
+    background: black;
+    border: 1px solid white;
+}
+.grandezzaPulsante 
+{
+    width: 80px; 
+}
+.grandezzaPulsante2
+{
+    width:45px;
+}
+.grandezzaPulsante3
+{
+    width:110px;
+}
+.titoloTemi
+{
+    display: block;
+    width: 50px;
+    height: 12px;
+    font-size:12px;
+    font-weight: bold;
+    color: white; 
+    position: absolute; top: 58px; left: 19px; text-align: center; z-index: 2;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    z-index: 1;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    margin-right: auto;
+}
+.titoloImpostazioni
+{
+    display: block;
+    width: 92px;
+    height: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 305px;
+    left: 19px;
+    text-align: center;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    z-index: 1;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    margin-right: auto;
+}
+#datiInTabella td{
+    border-right: 1px solid #242424;
+    border-top: 1px solid #242424;
+    padding: 15px 20px 15px 30px;
+}
+
+.titoloIcone
+{
+    display: block;
+    width: 50px;
+    height: 12px;
+    font-size:12px;
+    font-weight: bold;
+    color: white; 
+    position: absolute; top: 155px; left: 19px; text-align: center; z-index: 2;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    z-index: 1;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    margin-right: auto;
+}
+.grandeTextarea
+{
+    display: block;
+    position: fixed;
+    top: 76px;
+    background: #333;
+    width: 80%;
+    margin: 0px;
+    height: 180px;
+    left: 0px;
+    right: 0px;
+    margin-left: 10%!important;
+    margin-right: 10%!important;
+    text-align: center;
+    border: 1px solid;
+    z-index: 10;
+    color:white;
+    font-size: 15px;
+
+}
+#contenuto
+{
+    position: relative;
+    top:70px;
+    padding-bottom: 110px;
+    text-align: center;
+}
+canvas{
+    margin:2.5px
+}
+button{
+    width: 45px;
+    padding: 0px;
+    margin: 0px;
+}
+.testo{
+    overflow: auto;
+    height: 160px;
+    padding: 10px
+}
+.created
+{
+    position: fixed;
+    margin: auto;
+    text-align: center;
+    bottom: 55px;
+    width: 100%;
+}
+.created2
+{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    top:150px;
+    width: 100%;
+}
+.created3
+{
+    top:70px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    bottom:20px;
+    width: 100%;
+    height: 120px;
+}
+p{-webkit-margin-before: 0em;-webkit-margin-after: 0em;margin:0px
+}
+#oscurato
+{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 20;     /* o un numero maggiore degli altri z-index, se presenti */
+    background: black;
+}
